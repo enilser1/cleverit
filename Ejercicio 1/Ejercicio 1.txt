@@ -1,0 +1,45 @@
+#language: es
+@testfeature
+Característica:
+  Yo, como cliente
+  Quiero, buscar un producto en el buscador
+  Para validar que los productos mostrados sean los correctos
+
+
+ Escenario: Comprobar buscador
+    Dado que me encuentro en la pagina Google Search
+    Cuando ingreso la palabara zapato en el buscador
+    Y presiono la tecla enter
+    Entonces aparecen imagenes y links relacionados a zapatos
+
+--------------------------------------------------------------------------------
+
+#language: es
+@testfeature
+Característica:
+  Yo, como cliente
+  Quiero, buscar un producto en el buscador
+  Para validar que los productos mostrados sean los correctos
+
+
+  Escenario: Comprobar opcion de Busqueda por voz
+    Dado que me encuentro en la pagina Google Search
+    Cuando ingreso la palabara gorro en el buscador
+    Y presiono el boton de "Busqueda por voz"
+    Entonces aparecen imagenes y links relacionados a gorros
+
+---------------------------------------------------------------------------------
+
+#language: es
+@testfeature
+Característica:
+  Yo, como cliente
+  Quiero, buscar un producto en el buscador
+  Para validar que los productos mostrados sean los correctos
+
+
+  Escenario: Comprobar opcion de Busqueda por imagen
+    Dado que me encuentro en la pagina Google Search
+    Cuando ingreso la palabara polera en el buscador
+    Y presiono el boton de "Busqueda por imagen"
+    Entonces aparecen imagenes y links relacionados a poleras

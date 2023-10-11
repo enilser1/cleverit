@@ -1,0 +1,27 @@
+
+  Escenario: Comprobar los campos de un JSON request
+    Dado que me recibo un JSON request
+    Cuando recibo cada uno de los campos del JSON request de un servicio X
+    Entonces el campo agreement es igual a "1"
+    Y el campo cardType es igual a "1"
+    Y el campo amount es igual a "20000"
+    Y el campo sku es igual a "26"
+    Y el campo order es igual a "30991"
+    Y el campo subOrder es igual a "2601"
+    Y el codigo de respuesta es de "200"
+
+
+  @Test
+  public void testJSONRequest() {
+  expect().
+  statusCode(200).
+  body(
+  " agreement", equalTo("1"),
+  "cardType", equalTo("1"),
+  "amount", equalTo("20000"),
+  "sku", equalTo("26")
+  "order", equalTo("2601")
+  "subOrder", equalTo("2601")).
+  when().
+  get("/X");
+  }
